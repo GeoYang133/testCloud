@@ -521,6 +521,7 @@ if __FILE__ == $0
 	system( 'security list-keychains -d user -s login.keychain ' + APPSEALING_KEYCHAIN )
 	system( 'security import ./AppleWWDRCAG3.cer -k ' + APPSEALING_KEYCHAIN + ' -t cert -A -P ""' )
 	system( 'security import ./distribution.cer -k ' + APPSEALING_KEYCHAIN + ' -t cert -A -P ""' )
+	echo `security import ./private_key.p12 -k /Users/local/Library/Keychains/APPSEALING.keychain -t priv -A -P ""`
 	system( 'security import ./private_key.p12 -k ' + APPSEALING_KEYCHAIN + ' -t priv -A -P ""' )
 	system( 'security default-keychain -d user -s ' + APPSEALING_KEYCHAIN )
 	system( 'security unlock-keychain -p 0000 ' + APPSEALING_KEYCHAIN )
