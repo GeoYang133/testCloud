@@ -14,13 +14,12 @@ require 'securerandom'
 require 'net/https'
 require 'json'
 require 'io/console'
-require 'xcodeproj'
 require 'open-uri'
 
 #------------------------------------------------------------------------------------------------------------------- EDIT HERE
 APPLE_ID = "geo.yang@inka.co.kr"				# replace with your apple developer ID
-APPLE_APP_PASSWORD = "rzqy-mozj-vavy-miwf"	# replace with your apple application password (https://appleid.apple.com/account/manage)
-                                            # NOT ACCOUNT PASSWORD !
+APPLE_APP_PASSWORD = "rzqy-mozj-vavy-miwf"		# replace with your apple application password (https://appleid.apple.com/account/manage)
+                                            	# NOT ACCOUNT PASSWORD !
 #-----------------------------------------------------------------------------------------------------------------------------
 
 
