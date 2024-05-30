@@ -29,6 +29,7 @@
 		926E72A72C08212800B779FB /* appsealing.lic */ = {isa = PBXFileReference; lastKnownFileType = file; name = appsealing.lic; path = AppSealingSDK/Libraries/appsealing.lic; sourceTree = "<group>"; };
 		926E72AC2C0826B200B779FB /* testCloud-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testCloud-Bridging-Header.h"; sourceTree = "<group>"; };
 		926E72AD2C0826B300B779FB /* AppsealingiOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppsealingiOS.mm; path = AppSealingSDK/Libraries/AppsealingiOS.mm; sourceTree = "<group>"; };
+		926E72AF2C0827B900B779FB /* AppsealingiOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppsealingiOS.h; path = AppSealingSDK/Libraries/AppsealingiOS.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 				921D6F732C00345800D410C8 /* Products */,
 				926E72A62C081FA100B779FB /* Recovered References */,
 				926E72AC2C0826B200B779FB /* testCloud-Bridging-Header.h */,
+				926E72AF2C0827B900B779FB /* AppsealingiOS.h */,
 			);
 			sourceTree = "<group>";
 		};
