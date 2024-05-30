@@ -28,6 +28,7 @@
 		921D6F812C00345900D410C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		921D6F832C00345900D410C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		926E72A72C08212800B779FB /* appsealing.lic */ = {isa = PBXFileReference; lastKnownFileType = file; name = appsealing.lic; path = AppSealingSDK/Libraries/appsealing.lic; sourceTree = "<group>"; };
+		926E72A92C08224200B779FB /* testCloud-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "testCloud-Bridging-Header.h"; path = "testCloud/testCloud-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		921D6F692C00345800D410C8 = {
 			isa = PBXGroup;
 			children = (
+				926E72A92C08224200B779FB /* testCloud-Bridging-Header.h */,
 				926E72A72C08212800B779FB /* appsealing.lic */,
 				921D6F742C00345800D410C8 /* testCloud */,
 				921D6F732C00345800D410C8 /* Products */,
