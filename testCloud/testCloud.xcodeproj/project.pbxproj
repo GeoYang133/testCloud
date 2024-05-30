@@ -13,6 +13,8 @@
 		921D6F7D2C00345800D410C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921D6F7B2C00345800D410C8 /* Main.storyboard */; };
 		921D6F7F2C00345900D410C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921D6F7E2C00345900D410C8 /* Assets.xcassets */; };
 		921D6F822C00345900D410C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921D6F802C00345900D410C8 /* LaunchScreen.storyboard */; };
+		42F6F65B2A864778B49EEBDC /* AppsealingiOS.mm in Resources */ = {isa = PBXBuildFile; fileRef = 53AD8858069740A9991B67C4 /* AppsealingiOS.mm */; settings = {ATTRIBUTES = (Weak, ); }; };
+		946BA6A1A8344462882B6952 /* appsealing.lic in Resources */ = {isa = PBXBuildFile; fileRef = 79B590C83D59474EB714C472 /* appsealing.lic */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		921D6F7E2C00345900D410C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		921D6F812C00345900D410C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		921D6F832C00345900D410C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B33281C8C124508867CB50E /* AppsealingiOS.h */ = {isa = PBXFileReference; name = "AppsealingiOS.h"; path = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/AppSealingSDK/Libraries/AppsealingiOS.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		53AD8858069740A9991B67C4 /* AppsealingiOS.mm */ = {isa = PBXFileReference; name = "AppsealingiOS.mm"; path = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/AppSealingSDK/Libraries/AppsealingiOS.mm"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		79B590C83D59474EB714C472 /* appsealing.lic */ = {isa = PBXFileReference; name = "appsealing.lic"; path = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/AppSealingSDK/Libraries/appsealing.lic"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		98873132CA8747509B2D12D4 /* testCloud-Bridging-Header.h */ = {isa = PBXFileReference; name = "testCloud-Bridging-Header.h"; path = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,15 @@
 				921D6F832C00345900D410C8 /* Info.plist */,
 			);
 			path = testCloud;
+			sourceTree = "<group>";
+		};
+		8B61A0A455D44E9F85A7E763 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79B590C83D59474EB714C472 /* appsealing.lic */,
+			);
+			name = Resources;
+			path = undefined;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +143,7 @@
 				921D6F822C00345900D410C8 /* LaunchScreen.storyboard in Resources */,
 				921D6F7F2C00345900D410C8 /* Assets.xcassets in Resources */,
 				921D6F7D2C00345800D410C8 /* Main.storyboard in Resources */,
+				946BA6A1A8344462882B6952 /* appsealing.lic in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +157,7 @@
 				921D6F7A2C00345800D410C8 /* ViewController.swift in Sources */,
 				921D6F762C00345800D410C8 /* AppDelegate.swift in Sources */,
 				921D6F782C00345800D410C8 /* SceneDelegate.swift in Sources */,
+				42F6F65B2A864778B49EEBDC /* AppsealingiOS.mm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +243,13 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(PROJECT_DIR)/AppSealingSDK/Libraries",
+					"-lStaticAppSec_Debug",
+				);
+				"SWIFT_OBJC_BRIDGING_HEADER" = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
 			};
 			name = Debug;
 		};
@@ -282,6 +306,13 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(PROJECT_DIR)/AppSealingSDK/Libraries",
+					"-lStaticAppSec",
+				);
+				"SWIFT_OBJC_BRIDGING_HEADER" = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
 			};
 			name = Release;
 		};
@@ -315,6 +346,13 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(PROJECT_DIR)/AppSealingSDK/Libraries",
+					"-lStaticAppSec_Debug",
+				);
+				"SWIFT_OBJC_BRIDGING_HEADER" = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
 			};
 			name = Debug;
 		};
@@ -348,6 +386,13 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(PROJECT_DIR)/AppSealingSDK/Libraries",
+					"-lStaticAppSec",
+				);
+				"SWIFT_OBJC_BRIDGING_HEADER" = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
 			};
 			name = Release;
 		};
