@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42F6F65B2A864778B49EEBDC /* AppsealingiOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 53AD8858069740A9991B67C4 /* AppsealingiOS.mm */; settings = {ATTRIBUTES = (Weak, ); }; };
 		921D6F762C00345800D410C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D6F752C00345800D410C8 /* AppDelegate.swift */; };
 		921D6F782C00345800D410C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D6F772C00345800D410C8 /* SceneDelegate.swift */; };
 		921D6F7A2C00345800D410C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D6F792C00345800D410C8 /* ViewController.swift */; };
 		921D6F7D2C00345800D410C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921D6F7B2C00345800D410C8 /* Main.storyboard */; };
 		921D6F7F2C00345900D410C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921D6F7E2C00345900D410C8 /* Assets.xcassets */; };
 		921D6F822C00345900D410C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921D6F802C00345900D410C8 /* LaunchScreen.storyboard */; };
-		42F6F65B2A864778B49EEBDC /* AppsealingiOS.mm in Resources */ = {isa = PBXBuildFile; fileRef = 53AD8858069740A9991B67C4 /* AppsealingiOS.mm */; settings = {ATTRIBUTES = (Weak, ); }; };
-		946BA6A1A8344462882B6952 /* appsealing.lic in Resources */ = {isa = PBXBuildFile; fileRef = 79B590C83D59474EB714C472 /* appsealing.lic */; settings = {ATTRIBUTES = (Weak, ); }; };
+		926E72A82C08212800B779FB /* appsealing.lic in Resources */ = {isa = PBXBuildFile; fileRef = 926E72A72C08212800B779FB /* appsealing.lic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53AD8858069740A9991B67C4 /* AppsealingiOS.mm */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = sourcecode.cpp.objcpp; name = AppsealingiOS.mm; path = AppSealingSDK/Libraries/AppsealingiOS.mm; sourceTree = "<group>"; };
 		921D6F722C00345800D410C8 /* testCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		921D6F752C00345800D410C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		921D6F772C00345800D410C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,10 +27,7 @@
 		921D6F7E2C00345900D410C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		921D6F812C00345900D410C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		921D6F832C00345900D410C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B33281C8C124508867CB50E /* AppsealingiOS.h */ = {isa = PBXFileReference; name = "AppsealingiOS.h"; path = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/AppSealingSDK/Libraries/AppsealingiOS.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		53AD8858069740A9991B67C4 /* AppsealingiOS.mm */ = {isa = PBXFileReference; name = "AppsealingiOS.mm"; path = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/AppSealingSDK/Libraries/AppsealingiOS.mm"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		79B590C83D59474EB714C472 /* appsealing.lic */ = {isa = PBXFileReference; name = "appsealing.lic"; path = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/AppSealingSDK/Libraries/appsealing.lic"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		98873132CA8747509B2D12D4 /* testCloud-Bridging-Header.h */ = {isa = PBXFileReference; name = "testCloud-Bridging-Header.h"; path = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		926E72A72C08212800B779FB /* appsealing.lic */ = {isa = PBXFileReference; lastKnownFileType = file; name = appsealing.lic; path = AppSealingSDK/Libraries/appsealing.lic; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +44,10 @@
 		921D6F692C00345800D410C8 = {
 			isa = PBXGroup;
 			children = (
+				926E72A72C08212800B779FB /* appsealing.lic */,
 				921D6F742C00345800D410C8 /* testCloud */,
 				921D6F732C00345800D410C8 /* Products */,
+				926E72A62C081FA100B779FB /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,13 +73,12 @@
 			path = testCloud;
 			sourceTree = "<group>";
 		};
-		8B61A0A455D44E9F85A7E763 /* Resources */ = {
+		926E72A62C081FA100B779FB /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				79B590C83D59474EB714C472 /* appsealing.lic */,
+				53AD8858069740A9991B67C4 /* AppsealingiOS.mm */,
 			);
-			name = Resources;
-			path = undefined;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +139,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				926E72A82C08212800B779FB /* appsealing.lic in Resources */,
 				921D6F822C00345900D410C8 /* LaunchScreen.storyboard in Resources */,
 				921D6F7F2C00345900D410C8 /* Assets.xcassets in Resources */,
 				921D6F7D2C00345800D410C8 /* Main.storyboard in Resources */,
-				946BA6A1A8344462882B6952 /* appsealing.lic in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +156,7 @@
 				921D6F7A2C00345800D410C8 /* ViewController.swift in Sources */,
 				921D6F762C00345800D410C8 /* AppDelegate.swift in Sources */,
 				921D6F782C00345800D410C8 /* SceneDelegate.swift in Sources */,
-				42F6F65B2A864778B49EEBDC /* AppsealingiOS.mm in Resources */,
+				42F6F65B2A864778B49EEBDC /* AppsealingiOS.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +220,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -240,16 +240,15 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-L$(PROJECT_DIR)/AppSealingSDK/Libraries",
 					"-lStaticAppSec_Debug",
 				);
-				"SWIFT_OBJC_BRIDGING_HEADER" = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -291,6 +290,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -303,16 +303,15 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-L$(PROJECT_DIR)/AppSealingSDK/Libraries",
 					"-lStaticAppSec",
 				);
-				"SWIFT_OBJC_BRIDGING_HEADER" = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -326,6 +325,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 22X77ENQ2H;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = testCloud/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -339,20 +339,19 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.inka.testReactNative2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = testReactNative2new;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-L$(PROJECT_DIR)/AppSealingSDK/Libraries",
 					"-lStaticAppSec_Debug",
 				);
-				"SWIFT_OBJC_BRIDGING_HEADER" = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inka.testReactNative2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = testReactNative2new;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -366,6 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 22X77ENQ2H;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = testCloud/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -379,20 +379,19 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.inka.testReactNative2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = testReactNative2new;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-L$(PROJECT_DIR)/AppSealingSDK/Libraries",
 					"-lStaticAppSec",
 				);
-				"SWIFT_OBJC_BRIDGING_HEADER" = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inka.testReactNative2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = testReactNative2new;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/kim-wontae/Desktop/projects/testCloud/testCloud/testCloud/testCloud-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
